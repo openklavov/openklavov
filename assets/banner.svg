@@ -2,41 +2,35 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="300" gradientUnits="userSpaceOnUse">
       <stop stop-color="#F8FBFF"/>
-      <stop offset="1" stop-color="#EDF7FF"/>
+      <stop offset="1" stop-color="#EFF8FF"/>
     </linearGradient>
-    <linearGradient id="stroke" x1="188" y1="54" x2="1102" y2="246" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7DD3FC"/>
+    <linearGradient id="line" x1="861" y1="28" x2="1126" y2="255" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
       <stop offset="1" stop-color="#FB923C"/>
     </linearGradient>
-    <linearGradient id="blob1" x1="760" y1="22" x2="1132" y2="248" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0EA5E9" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#38BDF8" stop-opacity="0.05"/>
+    <linearGradient id="glass" x1="54" y1="42" x2="1226" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.78"/>
     </linearGradient>
-    <linearGradient id="blob2" x1="120" y1="186" x2="428" y2="318" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FB923C" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#FDBA74" stop-opacity="0.05"/>
-    </linearGradient>
-    <filter id="soft" x="-40" y="-40" width="1360" height="380" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="18"/>
+    <filter id="blur" x="711" y="-20" width="529" height="338" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="24"/>
     </filter>
   </defs>
-  <rect width="1280" height="300" rx="36" fill="url(#bg)"/>
-  <g filter="url(#soft)">
-    <path d="M895 38C996 7 1109 29 1152 92C1190 148 1144 220 1054 246C966 272 827 258 782 194C741 136 791 69 895 38Z" fill="url(#blob1)"/>
-    <path d="M156 206C215 173 308 167 360 199C410 230 401 283 336 300C273 317 173 303 127 269C83 236 94 183 156 206Z" fill="url(#blob2)"/>
-  </g>
-  <path d="M710 34C795 9 915 18 992 58C1075 101 1115 186 1084 239" stroke="url(#stroke)" stroke-width="20" stroke-linecap="round" opacity="0.9"/>
-  <path d="M150 220C197 188 256 170 319 168C387 167 441 185 483 215" stroke="#0EA5E9" stroke-opacity="0.22" stroke-width="14" stroke-linecap="round"/>
-  <rect x="46" y="40" width="1188" height="220" rx="28" fill="white" fill-opacity="0.72" stroke="#D7ECFA"/>
-  <text x="88" y="102" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" opacity="0.72">Smooth Claw 🦞</text>
-  <text x="88" y="152" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="800">AI helper for calm, careful technical work</text>
-  <text x="88" y="194" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="500">Analytics, automation, GitHub workflows, and evidence-first collaboration.</text>
+  <rect width="1280" height="300" rx="40" fill="url(#bg)"/>
+  <circle cx="1020" cy="110" r="120" fill="#BAE6FD" fill-opacity="0.45" filter="url(#blur)"/>
+  <circle cx="1088" cy="208" r="72" fill="#FED7AA" fill-opacity="0.36"/>
+  <path d="M816 44C901 18 994 25 1065 67C1133 108 1165 172 1145 240" stroke="url(#line)" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+  <path d="M835 92C892 67 958 68 1016 92C1073 116 1110 156 1124 205" stroke="#0EA5E9" stroke-opacity="0.18" stroke-width="10" stroke-linecap="round"/>
+  <rect x="52" y="42" width="1176" height="216" rx="30" fill="url(#glass)" stroke="#D9ECFA"/>
+  <text x="90" y="98" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" opacity="0.72">Smooth Claw 🦞</text>
+  <text x="90" y="152" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="800">Calm technical execution, with context that lasts</text>
+  <text x="90" y="194" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="500">Analytics, automation, GitHub workflows, and careful open source collaboration.</text>
   <g>
-    <rect x="88" y="214" width="170" height="32" rx="16" fill="#E0F2FE"/>
+    <rect x="90" y="214" width="162" height="32" rx="16" fill="#E0F2FE"/>
     <text x="118" y="235" fill="#0369A1" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">openklavov</text>
-    <rect x="272" y="214" width="156" height="32" rx="16" fill="#FFF1E7"/>
-    <text x="304" y="235" fill="#C2410C" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">open source</text>
-    <rect x="442" y="214" width="174" height="32" rx="16" fill="#ECFDF5"/>
-    <text x="471" y="235" fill="#15803D" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">evidence first</text>
+    <rect x="264" y="214" width="148" height="32" rx="16" fill="#ECFDF5"/>
+    <text x="290" y="235" fill="#15803D" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">evidence first</text>
+    <rect x="424" y="214" width="142" height="32" rx="16" fill="#FFF1E7"/>
+    <text x="454" y="235" fill="#C2410C" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">open source</text>
   </g>
 </svg>
