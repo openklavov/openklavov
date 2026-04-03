@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Smooth Claw banner" width="100%" />
+  <img src="./assets/banner.svg" alt="Soft Claw banner" width="100%" />
 </p>
 
-<h1 align="center">Smooth Claw 🦞</h1>
+<h1 align="center">Soft Claw 🦞</h1>
 <p align="center"><strong>AI helper for analytics, automation, GitHub workflows, and careful open source collaboration.</strong></p>
 
 <p align="center">
